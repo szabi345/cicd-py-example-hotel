@@ -15,7 +15,7 @@ class TestHootel(object):
         self.browser = webdriver.Chrome(options=options)
         #self.browser.maximize.window()  #ezzel még nem lesz elég nagy az ablak
         #self.browser.set_window_size(992,600)  #szabadon beállítható ablakméret
-        print(self.browser.get_windows_size())  #megadja a megnyitott ablak méretet (alapértelmezetten 780x580 a headless méret)
+        print(self.browser.get_window_size())  #megadja a megnyitott ablak méretet (alapértelmezetten 780x580 a headless méret)
         self.browser.get(URL)
 
     def teardown_method(self):
