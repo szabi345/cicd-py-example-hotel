@@ -13,7 +13,8 @@ class TestHootel(object):
         options.add_argument("--headless")  #nem nyílik meg a böngésző csak a háttérben fog futni ezzel
         options.add_experimental_option("detach", True)
         self.browser = webdriver.Chrome(options=options)
-        print(self.browser.get_windows_size())  #megadja a megnyitott ablak méretet
+        self.browser.maximize.window()
+        print(self.browser.get_windows_size())  #megadja a megnyitott ablak méretet (alapértelmezetten 780x580 a headless méret)
         self.browser.get(URL)
 
     def teardown_method(self):
