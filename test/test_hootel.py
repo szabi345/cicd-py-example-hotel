@@ -26,7 +26,7 @@ class TestHootel(object):
     @allure.severity(allure.severity_level.TRIVIAL)
     @allure.tag("login")
     def test_login_window_size_992px(self):
-        self.browser.set_window_size(991, 600)
+        self.browser.set_window_size(992, 600)
         login_btn = self.browser.find_element(By.XPATH, '//a[@class="nav-link"]')
         login_btn.click()
 
