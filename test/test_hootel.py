@@ -13,7 +13,8 @@ class TestHootel(object):
         options.add_argument("--headless")  #nem nyílik meg a böngésző csak a háttérben fog futni ezzel
         options.add_experimental_option("detach", True)
         self.browser = webdriver.Chrome(options=options)
-        self.browser.maximize.window()
+        #self.browser.maximize.window()  #ezzel még nem lesz elég nagy az ablak
+        self.browser.set_window_size(992,600)
         print(self.browser.get_windows_size())  #megadja a megnyitott ablak méretet (alapértelmezetten 780x580 a headless méret)
         self.browser.get(URL)
 
