@@ -37,6 +37,7 @@ jobs:
     - name: Fun with linux
       run: |
         ls -lha
+        cat requirements.txt
 
     - name: Test with pytest
       run: |
