@@ -1,1 +1,0 @@
-# cicd-py-example-hotel
